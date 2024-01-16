@@ -401,6 +401,7 @@ DEPENDENCIES
   pry
   puma (~> 6.0)
   rails (~> 7.0)
+  railties (<= 7.0.0)
   rspec
   rspec-rails
   selenium-webdriver

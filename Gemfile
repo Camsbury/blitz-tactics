@@ -12,6 +12,7 @@ gem 'pg', '~> 1.0'
 
 gem 'dotenv-rails'
 gem 'devise', '~> 4.3'
+gem 'railties', '<= 7.0.0'
 gem 'slim'
 gem 'glicko2'
 gem 'nio4r', '~> 2.5.9'

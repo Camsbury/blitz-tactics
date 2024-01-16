@@ -11,8 +11,6 @@ SET row_security = off;
 
 SET default_tablespace = '';
 
-SET default_table_access_method = heap;
-
 --
 -- Name: ar_internal_metadata; Type: TABLE; Schema: public; Owner: -
 --
@@ -1803,7 +1801,6 @@ CREATE UNIQUE INDEX index_users_on_reset_password_token ON public.users USING bt
 SET search_path TO "$user", public;
 
 INSERT INTO "schema_migrations" (version) VALUES
-('20160223082005'),
 ('20160313063315'),
 ('20160313063553'),
 ('20160313074604'),
@@ -1824,7 +1821,6 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20180625160722'),
 ('20180626024019'),
 ('20180626024026'),
-('20180626052132'),
 ('20181206064113'),
 ('20181206064149'),
 ('20181207065925'),
