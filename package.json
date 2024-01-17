@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "./bin/webpack-dev-server",
+    "drun": "concurrently \"bin/rails s\" \"yarn dev\"",
     "tsc": "./node_modules/.bin/tsc --noEmit",
     "eye:load": "eye l eye.rb",
     "eye:info": "eye i",
@@ -24,6 +25,7 @@
     "backbone.native": "^1.0.0",
     "chess.js": "^0.11.0",
     "chessground": "https://github.com/linrock/chessground.git#blitz-tactics",
+    "concurrently": "^7.4.0",
     "fastclick": "^1.0.6",
     "mithril": "^1.1.6",
     "mousetrap": "^1.6.2",
