@@ -1,7 +1,7 @@
 @use "../../../assets/stylesheets/_variables" as vars
 
 body[data-controller=puzzles][data-action=show]
-  $board-size: 496px
+  $board-size: 640px
 
   margin: 0 auto 50px
 
@@ -21,14 +21,14 @@ body[data-controller=puzzles][data-action=show]
   .left
     width: vars.$board-size
 
-  .right 
+  .right
     margin: 103px 0 0 37px
     width: 100%
 
-    h2 
+    h2
       margin-bottom: 15px
 
-    .description 
+    .description
       font-size: 14px
       line-height: 21px
       opacity: 0.5
@@ -78,11 +78,11 @@ body[data-controller=puzzles][data-action=show]
   .puzzle-report-message
     width: 100%
 
-  .actions 
+  .actions
     margin-top: 30px
     text-align: center
 
-    .button 
+    .button
       font-size: 16px
       padding: 8px 20px
       border: 0
@@ -95,6 +95,6 @@ body[data-controller=puzzles][data-action=show]
       text-decoration: none
       transition: opacity 0.25s ease
 
-      &:hover 
+      &:hover
         background: #51B7FF
         cursor: pointer

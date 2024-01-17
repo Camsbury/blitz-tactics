@@ -1,6 +1,7 @@
 {
   "scripts": {
     "dev": "./bin/webpack-dev-server",
+    "drun": "concurrently \"bin/rails s\" \"yarn dev\"",
     "tsc": "./node_modules/.bin/tsc --noEmit",
     "eye:load": "eye l eye.rb",
     "eye:info": "eye i",
