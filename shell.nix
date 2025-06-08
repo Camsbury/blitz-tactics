@@ -1,8 +1,5 @@
 let
-  pkgs = import <nixpkgs> {
-    overlays = [(import ./overlays.nix)];
-  };
-  nodePkgs = import ./pinned.nix {
+  pkgs = import ./pinned.nix {
     overlays = [(import ./overlays.nix)];
   };
 in
@@ -11,10 +8,14 @@ in
     buildInputs = [
       bundix
       bundler
-      nodePkgs.nodejs
+      nodejs
       postgresql
-      python
+      python3
       ruby
-      nodePkgs.yarn
+      yarn
+      pkg-config
+      libyaml
+      typescript
+      typescript-language-server
     ];
   }

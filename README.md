@@ -44,8 +44,8 @@ a dev environment with the chess puzzles used on the site:
 bundle install    # install ruby gems
 yarn install      # install node_modules
 
-rails db:create   # set up an empty postgres db: blitz-tactics_development
-rails db:migrate  # sets up the db schema
+bin/rails db:create   # set up an empty postgres db: blitz-tactics_development
+bin/rails db:migrate  # sets up the db schema
 
 yarn lichess:puzzles:fetch   # downloads ~125k lichess v1 puzzles as JSON files
 yarn lichess:puzzles:import  # import puzzles from JSON into the db (15+ min)
