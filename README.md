@@ -46,17 +46,21 @@ yarn install      # install node_modules
 
 bin/rails db:create   # set up an empty postgres db: blitz-tactics_development
 bin/rails db:migrate  # sets up the db schema
+bin/rails db:seed     # inserts the test user
 
 yarn lichess:puzzles:fetch   # downloads ~125k lichess v1 puzzles as JSON files
 yarn lichess:puzzles:import  # import puzzles from JSON into the db (15+ min)
 yarn lichess:puzzles:check   # should confirm the puzzles were loaded
+
+yarn lichess:puzzles:v2:fetch   # downloads ~125k lichess v1 puzzles as JSON files
+yarn lichess:puzzles:v2:import  # import puzzles from JSON into the db (15+ min)
 
 yarn blitz:game_modes:fetch  # downloads puzzles used on blitztactics.com as JSON files
 yarn blitz:game_modes:import # imports game modes puzzles into the db (6+ min)
 yarn blitz:game_modes:check  # prints the number of puzzles in the db for each game mode
 ```
 
-* Run a rails dev server: `rails s`
+* Run a rails dev server: `bin/rails s`
 * Run a webpack dev server: `yarn dev` or `./bin/webpack-dev-server`
 
 Go to `http://localhost:3000/` and you'll see the Blitz Tactics homepage if all went well.

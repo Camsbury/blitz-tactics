@@ -7,7 +7,8 @@ class SpeedrunLevel < ActiveRecord::Base
   validates :name, presence: true, uniqueness: true
 
   def self.today
-    Date.today
+    # Date.today
+    Date.new(2024, 1, 16)
   end
 
   def self.todays_date
@@ -33,6 +34,7 @@ class SpeedrunLevel < ActiveRecord::Base
   def puzzles
     # speedrun_puzzles.order('id ASC')
     json_data_filename = LEVELS_DIR.join("speedrun-#{name}.json")
+    print(json_data_filename)
     unless File.exist? json_data_filename
       # TODO fix race condition where concurrent requests will trigger this
       SpeedrunLevelCreator.export_puzzles_for_date(Date.strptime(name))
