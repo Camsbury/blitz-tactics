@@ -41,6 +41,8 @@ Then from within your git clone of the codebase, these steps will get you
 a dev environment with the chess puzzles used on the site:
 
 ```bash
+nix-shell # install the dependencies
+
 bundle install    # install ruby gems
 yarn install      # install node_modules
 
