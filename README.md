@@ -60,6 +60,7 @@ yarn lichess:puzzles:v2:import  # import puzzles from JSON into the db (15+ min)
 yarn blitz:game_modes:fetch  # downloads puzzles used on blitztactics.com as JSON files
 yarn blitz:game_modes:import # imports game modes puzzles into the db (6+ min)
 yarn blitz:game_modes:check  # prints the number of puzzles in the db for each game mode
+yarn build:css
 ```
 
 * Run a rails dev server: `bin/rails s`
